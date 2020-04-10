@@ -28,7 +28,7 @@ int main(void)
         sscanf(buf,"%lf",&val);
 
 
-        printf("%d\n",val);
+        printf("%4.3f\n",val);
 
 
 
