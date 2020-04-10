@@ -3,8 +3,8 @@
 #include <string.h>
 #include <math.h>
 
-extern double ave_online(double val,double ave)
-extern double var_online()
+extern double ave_online(double val,double ave);
+extern double var_online();
 
 int main(void)
 {
@@ -28,7 +28,7 @@ int main(void)
         sscanf(buf,"%lf",&val);
 
 
-    
+        printf("%d\n",val);
 
 
 
