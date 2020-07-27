@@ -11,7 +11,7 @@
 #endif
 
 extern double r_unif(void);
-extern double r_norm(void);
+extern double r_stdnorm(void);
 
 int main(int argc, char* argv[])
 {
@@ -33,8 +33,8 @@ int main(int argc, char* argv[])
 
     srand(RAND_SEED);
     for(i=1; i<=num_dummy; i++){
-        /*r_normを使って, 1人のデータを捏造 */
-        dummy = r_norm() * sigma + mu;
+        /*r_stdnormを使って, 1人のデータを捏造 */
+        dummy = r_stdnorm() * sigma + mu;
         printf("%5.2lf\n", dummy);
     }
 
@@ -46,7 +46,7 @@ double r_unif(void)
     return (double)(rand()+1)/(RAND_MAX+2);
 }
   
-double r_norm(void)
+double r_stdnorm(void)
 {  
     return sqrt( -2.0*log(r_unif()) ) * sin( 2.0*M_PI*r_unif() );
 } 
