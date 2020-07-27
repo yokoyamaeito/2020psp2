@@ -79,7 +79,7 @@ int main(void)
             printf("height:%.2lf\n",data[i].height);
         }
     }
-    if(flag = 0){
+    if(flag == 0){
         printf("No data\n");
     }
     return 0;
