@@ -43,36 +43,53 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
+
 以下, 自分自身で変更した箇所を中心に説明を記しています(もともと記述されていた部分は一部省略しています).
 
+
 l.6:  main関数の下に関数ave_onlineを記述
+
 l.7:  main関数の下に関数var_onlineを記述
+
 l.13: 必要な変数の定義
+
 l.29: ファイルを1行ずつbufに読み込み, 読み込み成功する限り以下を繰り返す
+
 l.30: bufからscanfで数値文字列を実数としてvalに読み込む
+
 l.31: カウンタ変数iを増加させる
+
 l.32: 関数var_onrineの実行結果をvarに代入
+
 l.33: 関数ave_onrineを利用してデータの２乗平均を求め, square_aveに代入
+
 l.34: 関数ave_onrineの実行結果をaveに代入
+
 l.37: 母集団分散を求める
+
 l.39: 標本平均を出力
+
 l.40: 標本分散を出力
+
 l.41: 母集団平均を出力
+
 l.42: 母集団分散を出力
+
 l.52: 標本平均を求めるための関数ave_onlineを定義する
+
 l.58: 標本分散を求めるための関数var_onrineを定義する
+
 
 ## 入出力結果
 
 ```
 input the filename of sample:../sample/heights_male.csv
 the filename of sample: ../sample/heights_male.csv
-sample mean：
-sample variance：
-population mean (estimated)：
-population variance (estimated)：
+smple mean: 173.89
+sample variance: 25.36
+ulation mean (estimated): 173.89+-1.90
+ulation variance (estimated): 28.98
 ```
 
 ## 修正履歴
 
-説明は「かきくけこ」だ！
