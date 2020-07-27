@@ -21,24 +21,38 @@ aa83988848 薗田光太郎
 
 ## ソースコードの説明
 
+
 以下, 自分自身で変更した箇所を中心に説明を記しています(もともと記述されていた部分は一部省略しています).
 
+
 l.1:  M_PIを使用するために記述
+
 l.7:  main関数の下に関数p_stdnormを記述
+
 l.15: 必要な変数の定義
+
 l.28: ファイルを1行ずつbufに読み込み, 読み込み成功する限り以下を繰り返す
+
 l.29: bufからscanfで数値文字列を実数としてvalに読み込む
+
 l.30: 平均と分散を用いることでA県の尤度をL_Aに代入する
+
 l.31: 平均と分散を用いることでB県の尤度をL_Bに代入する
+
 l.39: A県の尤度L_Aを出力
+
 l.40: B県の尤度L_Bを出力
+
 l.52: 標準正規分布N(0,1)における値zの出現確率を出力する関数p_stdnormを定義する
+
+
 ## 入出力結果
 
 ```
-Likelihood for A：
-Likelihood for B：
+input the filename of sample:../sample/heights_male.csv
+the filename of sample: ../sample/heights_male.csv
+L_A: 0.000006
+L_B: 0.000002
 ```
 
 ## 修正履歴
-
